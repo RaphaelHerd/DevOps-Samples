@@ -37,7 +37,7 @@ The class is flagged as a @SpringBootApplication and as a @RestController, meani
 Before we can start dockerizing the application, we need to build the Java application.
 **$ ./gradlew build**
 If the build is successful, we can check the installation locally by starting the jar-file.
-**$ java -jar build/libs/spring-boot-docker-sample-0.1.0.jar **
+**$ java -jar build/libs/spring-boot-docker-sample-0.1.0.jar**
 Now the tomcat (webserver) should start and after a few secound try reach the website in web browser **http://localhost:8080**. You now should see the "Hello world!" message in web browser.
 
 ### Containerize the Spring Boot application
