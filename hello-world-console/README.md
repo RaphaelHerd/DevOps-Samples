@@ -1,4 +1,4 @@
-# Docker java 8 example helloworld console application
+# Docker java 7 example helloworld console application
 
 This application is a java minimal application that only prints out "Hello world" to the console.
 
