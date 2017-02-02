@@ -2,7 +2,7 @@
 
 Required Software:
 - Docker (apt-get install docker.io)
-- JDK (apt-get install openjdk-7-jdk)
+- JDK (apt-get install openjdk-7-jre and apt-get install openjdk-7-jdk)
 - Gradle (sudo apt-get install gradle)
 
 ### Spring Boot application details
