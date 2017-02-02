@@ -12,7 +12,7 @@ To run:
 
 ```
 # compile class
-java HelloWorldApp.java
+javac HelloWorldApp.java
 
 # alternatively pull openjdk:alpine and compile inside container
 docker pull openjdk:alpine
