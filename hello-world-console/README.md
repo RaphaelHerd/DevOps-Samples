@@ -15,10 +15,7 @@ To run:
 docker pull openjdk:alpine
 
 # compile class
-docker run -ti -v $(pwd):/files openjdk:alpine javac /files/HelloWorld.java
-
-# compile class
-# javac helloworld.java
+docker run -v $(pwd):/files openjdk:alpine javac /files/HelloWorld.java
 
 # test the compiled application
 # java HelloWorldApp 
