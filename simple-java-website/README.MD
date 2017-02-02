@@ -6,7 +6,7 @@ Required Software:
 - Gradle (sudo apt-get install gradle)
 
 ### Spring Boot application details
-The java file (entrypoint) can be found at following location "src/main/java/hello/Application.java"
+The java file (entry point) can be found at following location "src/main/java/hello/Application.java"
 ```
 package hello;
 
@@ -34,9 +34,9 @@ public class Application {
 The class is flagged as a @SpringBootApplication and as a @RestController, meaning it’s ready for use by Spring MVC to handle web requests. @RequestMapping maps / to the home() method which just sends a response back. The main() method uses Spring Boot’s SpringApplication.run() method to launch an application.
 
 ### Build the application
-Before we can start dockerizing the application, we need to build the Java application.
+Before we can start dockerizing the application, we fist need to build the Java application. We can build the application by using Gradle.
 **$ ./gradlew build**
-If the build is successful, we can check the installation locally by starting the jar-file.
+If the build is successful, we can check the installation locally by starting the jar-file manually.
 **$ java -jar build/libs/spring-boot-docker-sample-0.1.0.jar**. 
 Now the tomcat (webserver) should start and after a few secound try reach the website in web browser **http://localhost:8080**. You now should see the "Hello world!" message in web browser.
 
