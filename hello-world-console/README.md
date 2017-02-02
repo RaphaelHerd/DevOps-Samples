@@ -6,16 +6,22 @@ To get the application up and running we first need to build/compile the applica
 
 We Require:
 * [Docker](https://www.docker.com/) (apt-get install docker.io)
-* Open-JDK (to compile java file locally) (apt-get install openjdk-7-jdk)
+
 
 To run:
 
 ```
+# pull openjdk:alpine
+docker pull openjdk:alpine
+
 # compile class
-$ javac helloworld.java
+docker run -ti -v $(pwd):/files openjdk:alpine javac /files/HelloWorld.java
+
+# compile class
+# javac helloworld.java
 
 # test the compiled application
-$ java HelloWorldApp 
+# java HelloWorldApp 
 
 # if the application prints our "Hello World!" to the console, we now can dockerize the application.
 
