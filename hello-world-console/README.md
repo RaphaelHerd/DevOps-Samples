@@ -11,11 +11,12 @@ We Require:
 To run:
 
 ```
-# pull openjdk:alpine
-docker pull openjdk:alpine
-
 # compile class
-docker run -v $(pwd):/files openjdk:alpine javac /files/HelloWorldApp.java
+java HelloWorldApp.java
+
+# alternatively pull openjdk:alpine and compile inside container
+docker pull openjdk:alpine
+docker run --rm -v $(pwd):/files openjdk:alpine javac /files/HelloWorldApp.java
 
 # test the compiled application
 # java HelloWorldApp 
