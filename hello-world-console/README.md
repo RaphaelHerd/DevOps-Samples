@@ -1,6 +1,6 @@
-# Docker java 7 example helloworld console application
+# Docker java 7 example hello world console application
 
-This application is a java minimal application that only prints out "Hello world" to the console.
+This application is a java minimal application that only prints out "Hello world!" to the console.
 
 To get the application up and running we first need to build/compile the application by the javac compiler. If the application is compiled, we can execute the application without docker for test purposes. After that we dockerize the application followed by execute the application in docker.
 
